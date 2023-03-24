@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 #include <locale.h>
+#include <math.h>
 
 int main () {
 
@@ -21,5 +22,7 @@ int main () {
 
     latas = quantidadeTinta / 2000;
 
-    printf("Serão necessárias %.2f latas de tinta para pintar toda a parede.", latas);
+    double quantidadeFinalLatas = ceil(latas);
+
+    printf("Serão necessárias %.2f latas de tinta para pintar toda a parede.", quantidadeFinalLatas);
 }
